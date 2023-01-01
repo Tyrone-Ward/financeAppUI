@@ -5,8 +5,8 @@ import React from 'react'
 
 const OnboardingScreen = ({ navigation }) => (
   <Onboarding
-    onDone={() => navigation.replace('HomeScreen')}
-    onSkip={() => navigation.replace('HomeScreen')}
+    onDone={() => navigation.replace('SignUpScreen')}
+    onSkip={() => navigation.replace('SignUpScreen')}
     pages={[
       {
         backgroundColor: 'green',
