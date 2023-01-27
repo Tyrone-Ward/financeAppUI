@@ -25,9 +25,9 @@ const SignUpScreen = ({ navigation }) => {
           </View>
         </View>
       </View>
-      <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
-        <View style={styles.signUpButton}>
-          <Text style={{ color: 'white', fontSize: 14, fontWeight: '600' }}>SIGN UP</Text>
+      <TouchableOpacity onPress={() => navigation.replace('Home')}>
+        <View style={styles.LoginButton}>
+          <Text style={{ color: 'white', fontSize: 14, fontWeight: '600' }}>LOGIN</Text>
         </View>
       </TouchableOpacity>
       <View style={styles.footer}>
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     borderColor: 'tomato'
   },
-  signUpButton: {
+  LoginButton: {
     borderWidth: 1,
     borderColor: 'tomato',
     height: 56,
